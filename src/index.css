@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.marginleft{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: left;
+  background-color: cadetblue;
+}
+table, th, td {
+  border: 1px solid rgb(72, 164, 206);
+  border-collapse: collapse;
+  padding-left: 10px;
+  padding-right: 10px;
+  word-wrap: break-word;
+  word-break: break-word;
+  width:auto;font-size: 15px;
+}
+
+table{
+  width: 100%;
+}
+d-none{
+  display: none;
+}
+
+.ChunkIdwidth{
+width: 200px;
+}
+
+.hide {
+  display: none;
+}
+
+.inprogress{
+  color: "green"
+}
+.online{
+  color: forestgreen
+}
+.offline{
+  color: red
+}
+
+.paused{
+  color: "black"
+}
+
+.resume{
+  color: "yellow"
+}
+
+ 
+.custom-button {
+  background-color:#3095D7;
+  color: #fff;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+  
+
+.custom-button:hover {
+  background-color: #0069d9;
+}
