@@ -1,7 +1,7 @@
 
   export const InsertChuckData = async (payload: string | undefined): Promise<any[] | undefined> => {
     var datas;
-    await fetch("https://localhost:7238/api/FileUpload/Create", {
+    await fetch("https://dronapoc.azurewebsites.net/api/FileUpload/Create", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: payload,
@@ -15,7 +15,7 @@
   
   export const UpdateChuckData =async (payload: string | undefined): Promise<any[] | undefined> => {
     var datas;
-    await fetch("https://localhost:7238/api/FileUpload/Update", {
+    await fetch("https://dronapoc.azurewebsites.net/api/FileUpload/Update", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: payload,
@@ -28,7 +28,7 @@
 
   export const CheckChuckData =async (payload: string | undefined): Promise<any[] | undefined> => {
     var datas;
-    await fetch(`https://localhost:7238/api/FileUpload/Get?Id=${payload}`, {
+    await fetch(`https://dronapoc.azurewebsites.net/api/FileUpload/Get?Id=${payload}`, {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })

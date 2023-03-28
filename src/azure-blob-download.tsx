@@ -2,9 +2,9 @@ import { BlobServiceClient } from '@azure/storage-blob';
 import { InsertChuckData, UpdateChuckData, CheckChuckData, SetDate } from "./ApiCall";
 import { downloadFile } from './azure-storage-blob-download';
 
-const containerName = `file-upload`;
-const sasToken = "sp=racwdli&st=2023-03-14T07:32:02Z&se=2023-03-24T15:32:02Z&sv=2021-12-02&sr=c&sig=InYnmrlwCMTnhAR9slrvx6lWEFsIyWHmdbJO4Tvy%2FUI%3D";//process.env.REACT_APP_AZURE_STORAGE_SAS_TOKEN;
-const storageAccountName = "dronablobforfileupload";//process.env.REACT_APP_AZURE_STORAGE_RESOURCE_NAME;
+const containerName = `blobstorageaccount`;
+const sasToken = "sp=racwdli&st=2023-03-28T12:18:25Z&se=2023-03-28T20:18:25Z&spr=https&sv=2021-12-02&sr=c&sig=EIaxPs1Gl4lNWww7SFUWp2SEqCzWTWAhaDXteIvMfng%3D";//process.env.REACT_APP_AZURE_STORAGE_SAS_TOKEN;
+const storageAccountName = "dronastoragepoc";//process.env.REACT_APP_AZURE_STORAGE_RESOURCE_NAME;
 // </snippet_package>
 
 // <snippet_get_client>
