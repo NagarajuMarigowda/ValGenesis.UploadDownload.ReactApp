@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 // require('dotenv').config()
 const containerName = `file-upload`;
-const sasToken = "sp=racwdli&st=2023-03-06T06:11:06Z&se=2023-03-10T14:11:06Z&spr=https&sv=2021-06-08&sr=c&sig=aHvFca7%2FRjPdGC%2BLRh0qKihUMepCau06MdHdKdN9zRA%3D";//process.env.REACT_APP_AZURE_STORAGE_SAS_TOKEN;
+const sasToken = "sp=racwdli&st=2023-03-29T08:50:47Z&se=2023-04-29T16:50:47Z&spr=https&sv=2021-12-02&sr=c&sig=Ncny48eSHBjjCllSOWkiBAV%2BoFxWjC0RmbUExIjoNBQ%3D";//process.env.REACT_APP_AZURE_STORAGE_SAS_TOKEN;
 const storageAccountName = "dronablobforfileupload";//process.env.REACT_APP_AZURE_STORAGE_RESOURCE_NAME;
 // </snippet_package>
 
