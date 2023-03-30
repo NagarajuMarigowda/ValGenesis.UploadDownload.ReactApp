@@ -1,15 +1,11 @@
-FROM node:16.13.1-alpine AS build
-WORKDIR /
-COPY package.json package-lock.json ./
-COPY .npmrc ./
-RUN npm ci --omit=dev
-RUN rm -f .npmrc
+FROM node:16.13.1-alpine
+# FROM node:16.13.1 as build
+WORKDIR /app
+ENV PATH /app/node_modules/.bin:$PATH
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install --silent
+RUN npm install react-scripts@5.0.1 -g --silent
 COPY . ./
-RUN npm run build:webpack
-
-FROM nginx:alpine
-COPY --from=build /dist/ /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 9000 80
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+# RUN npm run build
+CMD ["npm", "start"]
